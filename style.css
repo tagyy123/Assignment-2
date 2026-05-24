@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo span {
+    letter-spacing: 0.02em;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.start-btn{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.hero h1{
+    font-size: 120px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+/* ================= ABSOLUTE CIRCLE ================= */
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 100, 0, 0.12);
+    position: absolute;
+    top: -20px;
+    right: 120px;
+    filter: blur(25px);
+}
+
+
+/* ================= CATEGORY BUTTONS ================= */
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.categories button{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 40px;
+    background-color: #111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.categories .active{
+    background-color: orangered;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.card{
+    width: 400px;
+    background-color: #0d0d0d;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 22px;
+}
+
+.tag{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: rgba(255, 100, 0, 0.2);
+    color: orange;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.card-content h2{
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.card-content p{
+    color: gray;
+    font-size: 15px;
+}
