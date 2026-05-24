@@ -1,0 +1,239 @@
+@font-face {
+    font-family: test;
+    src: url(./Resources/Fontspring-DEMO-rocgrotesk-regular.otf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-ht:test;
+    --primary-ht-size:clamp(1.25rem,5vw,20rem);
+    --primary-pt-size:1.125vw;
+
+    
+}
+
+body{
+    width: 100%;   
+    height: 100vh;
+    background: #F0F0F0;
+
+  
+
+}
+
+.main{
+    
+    background: #F0F0F0;
+    color: #410407;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container{
+        width: 100%;
+        padding: 3vw 0;
+
+        
+}
+
+/* Reusable components--------------------------------- */
+
+.margin-auto{
+    max-width:95%;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------------- */
+
+.star {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.star-img{
+    width: 4.25vw;
+
+}
+
+.main-heading {
+    font-size: var(--primary-ht-size);
+   
+    text-transform: uppercase;
+    font-family: var(--primary-ht);
+    font-weight: 100;
+    line-height: 4.25vw;
+    letter-spacing: -4px;
+
+
+    
+}
+
+.main-heading--text{
+    color: #B09893;
+    display: inline;
+}
+
+.heading-paragraph{
+    color: #410407;
+    font-size: var(--primary-pt-size);
+    line-height:1.125vw;
+    font-family: var(--primary-ht);
+    font-weight: 100;
+    padding: .825vw 0;
+    
+}
+
+
+.hero{
+
+    position: relative;
+}
+
+.capsule{
+     display: inline-block;
+    margin: 0 1vw;
+
+}
+
+.capsule-box{
+    background: linear-gradient(to left , #410407,orange 1px ,#410407 );
+    width: 8vw;
+    height: 4vw;
+    border-radius: 50px;
+   
+}
+
+.capsule-img{
+    width: 10%;
+    height: 90%;
+    background-image: url(sitted.png);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    bottom: 0.06vw;
+    left: 66%;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: #410407;
+    text-transform: uppercase;
+    font-family: var(--primary-ht);
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.share-page{
+    text-align: right;
+    font-size: var(--primary-pt-size);
+
+}
+
+.projects-link a{
+    font-size: 2vw;
+    border-bottom: .1px solid #410407;
+    margin: 20px 0;
+    
+}
+
+
+
+.section2--img{
+    gap: 1.25vw;
+    margin: 20px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.img-card{
+    width: 32%;
+    min-width: 220px;
+    height: 24rem;
+    overflow: hidden;
+    border-radius: .825rem;
+}
+
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: .825rem;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+
+
+.section3{
+   text-align: center;
+   
+}
+
+@media (min-width:1280px) {
+
+    .section2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 8vw;
+    
+}
+
+.projects-preveiw{
+    width: 64%;
+}
+
+
+
+.projects-link{
+    
+    width: calc(100% - 64%);
+    align-self: end;
+}
+
+.section2--img{
+
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 20px;
+    width: 100%;
+    
+
+}
+
+.img-card{
+    width: fit-content;
+    overflow: hidden;
+
+}
+
+.img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+}
