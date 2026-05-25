@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Gunaforycter</title>
+  <link rel="stylesheet" href="style1.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
+    <h1>Gunaforycter</h1>
+    <div class="divider">
+      <span></span>
+      <svg viewBox="0 0 40 24" fill="none">
+        <polygon points="20,2 28,14 20,10 12,14" fill="#c8692a"/>
+        <polygon points="20,22 28,10 20,14 12,10" fill="#c8692a" opacity="0.6"/>
+      </svg>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Cocktail Cards ── -->
+    <section class="cards">
+
+      <!-- Card 1: Sunset Flame -->
+      <div class="card active">
+        <!-- position:absolute badge -->
+        <span class="badge sig">★ Signature</span>
+        <!-- position:relative img-wrap -->
+        <div class="img-wrap">
+          <img src="https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-inviting-tequila-sunrise-cocktails-in-perfect-glasses-isolated-with-transparent-background-png-image_13094676.png" alt="Sunset Flame"/>
+        </div>
+        <!-- flex column: name + sub + divider + price -->
+        <div class="card-body">
+          <h2>Sunset Flame</h2>
+          <p class="sub">Tropical &amp; Refreshing</p>
+          <hr/>
+          <p class="price">$12.94</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Tropical Passion -->
+      <div class="card">
+        <div class="img-wrap">
+          <img class="png-transparent" src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-passion-fruit-mojito-tropical-cocktail-png-image_11671599.png" alt="Tropical Passion"/>
+        </div>
+        <div class="card-body">
+          <h2>Tropical Passion</h2>
+          <p class="sub">Fruity &amp; Exotic</p>
+          <hr/>
+          <p class="price">$11.04</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Citrus Dawn -->
+      <div class="card">
+        <div class="img-wrap">
+          <img src="https://png.pngtree.com/png-vector/20250519/ourmid/pngtree-glass-of-water-with-lime-slices-ice-citrus-drink-png-image_16311283.png" alt="Citrus Dawn"/>
+        </div>
+        <div class="card-body">
+          <h2>Citrus Dawn</h2>
+          <p class="sub">Citrusy &amp; Energizing</p>
+          <hr/>
+          <p class="price">$10.13</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Berry Breeze -->
+      <div class="card">
+        <span class="badge new"><i></i> New</span>
+        <div class="img-wrap">
+          <img class="png-transparent" src="https://png.pngtree.com/png-vector/20250524/ourmid/pngtree-blackberry-smash-cocktail-refreshing-drink-with-berries-png-image_16376081.png" alt="Berry Breeze"/>
+        </div>
+        <div class="card-body">
+          <h2>Berry Breeze</h2>
+          <p class="sub">Sweet &amp; Cool</p>
+          <hr/>
+          <p class="price">$9.48</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── Chef's Special ── -->
+    <section class="special">
+      <!-- position:relative on .special, food img on left -->
+      <div class="special-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80" alt="Chef's Special" class="food"/>
+        <!-- absolute accent bar over image edge -->
+        <div class="img-accent-bar"></div>
+      </div>
+
+      <div class="info">
+        <p class="tag">CHEF'S SPECIAL</p>
+        <h2>Bouliauts for laguancns</h2>
+        <p class="tagline">Experience our signature culinary creations.</p>
+        <p class="desc">Meticulously crafted with premium ingredients to deliver exceptional flavors and an unforgettable dining experience. Perfect for sharing or savoring on your own.</p>
+        <a href="#" class="btn">Explore Menu &nbsp;→</a>
+      </div>
+
+      <!-- position:absolute botanical decor -->
+      <div class="decor" aria-hidden="true">
+        <svg viewBox="0 0 100 200" fill="none">
+          <path d="M50 200 Q50 140 50 80" stroke="#c8692a" stroke-width="1.2" opacity="0.4"/>
+          <path d="M50 160 Q25 135 15 110" stroke="#c8692a" stroke-width="1" opacity="0.3"/>
+          <path d="M50 135 Q75 110 85 85"  stroke="#c8692a" stroke-width="1" opacity="0.3"/>
+          <path d="M50 110 Q28 85 20 60"   stroke="#c8692a" stroke-width="1" opacity="0.25"/>
+          <path d="M50 85  Q70 60 78 35"   stroke="#c8692a" stroke-width="1" opacity="0.25"/>
+          <path d="M50 60  Q35 38 30 15"   stroke="#c8692a" stroke-width="1" opacity="0.2"/>
+        </svg>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p class="copy">© Gunaforycter 2025</p>
+    <nav>
+      <a href="#">Explore</a> <b>•</b>
+      <a href="#">Food Menu</a> <b>•</b>
+      <a href="#">Drinks</a> <b>•</b>
+      <a href="#">Reservations</a>
+    </nav>
+    <div class="social">
+      <span>Follow Us</span>
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M15 8h-2a1 1 0 0 0-1 1v2h3l-.5 3H12v6"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Twitter/X">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8 15 L16 9 M16 15 L8 9"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
